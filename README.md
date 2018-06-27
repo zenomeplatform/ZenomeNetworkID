@@ -1,2 +1,2 @@
 # ZenomeNetworkID
-Identification in the Zenome.io network
+A module for generating and working with peers' unique identifiers
