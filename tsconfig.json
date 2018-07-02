@@ -17,5 +17,9 @@
   "include": [
     "**/*",
     "test/**/*"
+  ],
+  "exclude": [
+    "playground/**/*"
   ]
+
 }

@@ -1,30 +1,45 @@
 {
   "name": "DistibutedJS-Exp",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "ts-mocha ./test/**/*.spec.ts",
     "cover": "nyc mocha ./test/**/*.spec.ts",
-    "compile": "tsc -p ."
+    "compile": "tsc -p .",
+    "docs": "typedoc --theme minimal --hideGenerator --out ./doc/ src/**/*.ts",
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
   "devDependencies": {
+    "@types/parsimmon": "^1.10.0",
     "@types/big.js": "^4.0.5",
     "@types/collections": "^5.0.0",
     "@types/expect": "^1.20.3",
     "@types/mocha": "^5.2.2",
-    "@types/node": "^10.0.9",
-    "mocha": "^5.2.0",
+    "@types/node": "^10.3.5",
+    "@types/webpack": "^4.4.2",
     "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "ts-loader": "^4.4.1",
     "ts-mocha": "^1.2.0",
-    "ts-node": "^6.0.3",
-    "typescript": "^2.8.3",
-    "unexpected": "^10.38.0"
+    "ts-node": "^6.2.0",
+    "typescript": "^2.9.2",
+    "unexpected": "^10.38.0",
+    "webpack": "^4.12.1",
+    "webpack-command": "^0.3.0",
+    "nyc": "^12.0.2"
   },
   "dependencies": {
     "collections": "^5.1.2",
-    "tweetnacl": "^1.0.0"
+    "mississippi2": "^1.0.5",
+    "parsimmon": "^1.11.1",
+    "protons": "^1.0.1",
+    "through2-filter": "^3.0.0",
+    "through2-map": "^3.0.0",
+    "tslib": "^1.9.3",
+    "tweetnacl": "^1.0.0",
+    "typedoc-plugin-internal-external": "^1.0.10"
   }
 }

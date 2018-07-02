@@ -1,5 +1,5 @@
 {
-    "defaultSeverity": "error",
+    "defaultSeverity": "warning",
     "extends": [
         "tslint:recommended"
     ],
@@ -7,12 +7,23 @@
     "rules": {
       "no-bitwise": false,
       "forin": false,
+      "curly": false,
+      "ban-types": false,
       "prefer-for-of": true,
       "prefer-object-spread": true,
       "restrict-plus-operands": true,
       "cyclomatic-complexity": true,
       "completed-docs": true,
-      "trailing-comma": false
+      "no-string-literal": false,
+      "trailing-comma": false,
+      "only-arrow-functions": false,
+      "no-console": false,
+      "interface-name": false,
+      "callable-types": false,
+      "max-classes-per-file": false,
+      "unified-signatures": false,
+      "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+      "object-literal-sort-keys": false
     },
     "rulesDirectory": []
 }
